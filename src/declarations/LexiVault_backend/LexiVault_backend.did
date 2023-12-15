@@ -1,0 +1,20 @@
+type quoteToLawyer = 
+ record {
+   InstrumentURI: text;
+   caseAgainst: text;
+   caseBriefs: text;
+   caseType: text;
+   client: principal;
+   clientName: text;
+   dateTentative: text;
+ };
+type LexiVault = 
+ service {
+   acceptCase: (principal, nat32) -> (nat32);
+   caseLogin: (nat32) -> (bool) query;
+   createReqToLawyer: (vec text) -> ();
+   getAccepted: () -> (vec quoteToLawyer) query;
+   getAllCases: () -> (vec quoteToLawyer) query;
+   getRequests: () -> (vec quoteToLawyer) query;
+ };
+service : () -> LexiVault

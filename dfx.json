@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "LexiVault_backend": {
+      "main": "src/LexiVault_backend/main.mo",
+      "type": "motoko"
+    },
+    "LexiVault_frontend": {
+      "dependencies": [
+        "LexiVault_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/LexiVault_frontend/src/index.html"
+      },
+      "source": [
+        "src/LexiVault_frontend/assets",
+        "dist/LexiVault_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

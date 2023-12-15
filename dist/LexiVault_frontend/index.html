@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Lexi-Vault</title>
+<script defer src="index.js"></script></head>
+
+<body>
+    <nav class="navbar sticky-top bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Logo" width="32" height="28" class="d-inline-block align-text-top">
+                Lexi-Vault
+            </a>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="d-grid gap-4 col-4 mx-auto">
+            <a href="lawyerLogin.html" class="btn btn-info" style="background-color: #13547a;" id="Lawyer">Lawyer
+                Login</a>
+            <a href="clientLogin.html" class="btn btn-info" style="background-color: #13547a;" id="Client">Client
+                Login</a>
+            <button type="button" class="btn btn-info" style="background-color: #13547a;" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Case Data </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Case Data</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="inputPassword" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer text-white py-3 mx-auto" id="footer">
+        <hr style="height:2px;border-width:0;color:rgb(127, 120, 120);background-color:rgb(143, 140, 140)">
+        <div class="container">
+            <p>Contact Us: </p>
+            <p>
+                Naman Shankar Srivastava | Udit Singh Chauhan 
+            </p>
+            <p>
+                +91 91406 56880 | +91 74890 61499
+            </p>
+            <span>&copy; Lexi-Vault 2023</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

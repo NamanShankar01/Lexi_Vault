@@ -1,0 +1,44 @@
+body {
+    /* background: rgb(5,1,66);
+    background: linear-gradient(54deg, rgba(5,1,66,1) 0%, rgba(5,14,107,1) 61%, rgba(0,212,255,1) 100%); */
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+    width: 100vw;
+    height: 110vh;
+    font-family: 'Noto Sans', 'sans-serif';
+
+}
+
+.btn-info {
+    height: 15vh;
+    margin-top: auto;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    font-size: 30px;
+
+}
+
+#Lawyer {
+    padding-top: 45px;
+}
+
+#Client {
+    padding-top: 45px;
+}
+
+#footer {
+    justify-content: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
